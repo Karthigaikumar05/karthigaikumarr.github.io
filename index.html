@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Karthigaikumar R — Python Backend Developer portfolio. Skills, internship, projects, education and contact details.">
+  <meta property="og:title" content="Karthigaikumar R | Python Backend Developer">
+  <meta property="og:description" content="Explore my Python, Django, Flask, MySQL and machine learning projects.">
+  <meta name="theme-color" content="#0b1020">
+  <title>Karthigaikumar R | Python Backend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0b1020;--panel:#121a2d;--panel2:#172239;--text:#eef3ff;--muted:#a5b2ca;--accent:#65e0c2;--blue:#83aaff;--line:rgba(255,255,255,.1)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 85% 5%,#1b3150 0,transparent 28%),var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;line-height:1.65}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1100px,90%);margin:auto}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+    .brand{font-family:'Space Grotesk';font-weight:700;font-size:1.15rem}.brand span{color:var(--accent)}.navlinks{display:flex;gap:25px;color:var(--muted);font-size:.92rem}.navlinks a:hover{color:var(--accent)}
+    .hero{padding:100px 0 85px;display:grid;grid-template-columns:1.5fr .8fr;gap:55px;align-items:center}.eyebrow{color:var(--accent);font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:.78rem}
+    h1,h2,h3{font-family:'Space Grotesk';line-height:1.15}h1{font-size:clamp(2.7rem,6vw,5rem);margin:16px 0}h1 span{color:var(--accent)}.lead{font-size:1.12rem;color:var(--muted);max-width:650px}
+    .actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}.btn{padding:12px 19px;border-radius:10px;font-weight:700;border:1px solid var(--line);display:inline-flex;align-items:center;gap:8px}.primary{background:var(--accent);color:#07151a;border-color:var(--accent)}.btn:hover{transform:translateY(-2px)}
+    .hero-card{background:linear-gradient(145deg,#192943,#10192b);border:1px solid var(--line);border-radius:22px;padding:28px;box-shadow:0 25px 70px #0005}.avatar{width:112px;height:112px;border-radius:24px;overflow:hidden;border:2px solid rgba(101,224,194,.75);box-shadow:0 10px 30px #0005;margin-bottom:22px}.avatar img{width:100%;height:100%;object-fit:cover;object-position:center 30%;display:block}
+    .hero-card h3{margin:0 0 5px}.muted{color:var(--muted)}.quick{display:grid;gap:14px;margin-top:22px}.quick div{border-top:1px solid var(--line);padding-top:12px}.quick b{display:block;font-size:.8rem;color:var(--muted);font-weight:500}
+    section{padding:65px 0}.section-head{margin-bottom:30px}.section-head h2{font-size:2.15rem;margin:8px 0}.section-head p{color:var(--muted);margin:0}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.card{background:var(--panel);border:1px solid var(--line);border-radius:17px;padding:24px}.card h3{margin:0 0 10px;font-size:1.2rem}.card p{color:var(--muted);margin:8px 0}.taglist{display:flex;flex-wrap:wrap;gap:8px;margin-top:17px}.tag{font-size:.78rem;padding:6px 10px;border-radius:20px;background:#1c2b43;color:#c5d5f0;border:1px solid #ffffff12}
+    .skills{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.skill{background:var(--panel);border:1px solid var(--line);padding:19px;border-radius:14px}.skill b{display:block;margin-bottom:8px}.skill span{color:var(--muted);font-size:.93rem}
+    .timeline{border-left:2px solid #35506c;margin-left:8px;padding-left:25px}.timeline-item{position:relative;padding:0 0 28px}.timeline-item:before{content:"";position:absolute;left:-33px;top:7px;width:13px;height:13px;background:var(--accent);border-radius:50%;box-shadow:0 0 0 5px #65e0c21a}
+    .timeline-item h3{margin:0 0 5px}.timeline-item ul{color:var(--muted);padding-left:20px}.edu{display:flex;justify-content:space-between;gap:20px;align-items:center}.score{font:700 1.5rem 'Space Grotesk';color:var(--accent);white-space:nowrap}
+    .contact{background:linear-gradient(135deg,#14233a,#10192b);border:1px solid var(--line);border-radius:22px;padding:35px;display:flex;justify-content:space-between;gap:30px;align-items:center}.contact h2{font-size:2rem;margin:0 0 8px}.contact p{color:var(--muted);margin:0}.contact-links{display:grid;gap:9px;color:var(--accent);font-weight:600}
+    footer{padding:28px 0;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);margin-top:65px}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    @media(max-width:760px){.navlinks{gap:12px;font-size:.8rem}.hero{grid-template-columns:1fr;padding:70px 0 45px;gap:30px}.grid,.skills{grid-template-columns:1fr}.contact,.edu{align-items:flex-start;flex-direction:column}section{padding:48px 0}}
+    @media(max-width:430px){.navlinks a:nth-child(2),.navlinks a:nth-child(3){display:none}.wrap{width:88%}.card{padding:20px}}
+  </style>
+</head>
+<body>
+  <header class="wrap nav">
+    <a class="brand" href="#home">K<span>.</span>R</a>
+    <nav class="navlinks" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="wrap hero" id="home">
+      <div>
+        <div class="eyebrow">Python Backend Developer</div>
+        <h1>Hi, I'm<br><span>Karthigaikumar R.</span></h1>
+        <p class="lead">B.Tech Information Technology student focused on building reliable, data-driven web applications with Python, Django, Flask and MySQL.</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">Explore my work ↗</a>
+          <a class="btn" href="assets/Karthigaikumar_R_Resume.pdf" target="_blank" rel="noopener">View Resume ↗</a>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <div class="avatar"><img src="assets/profile.jpg" alt="Profile photo of Karthigaikumar R"></div>
+        <h3>Karthigaikumar R</h3>
+        <div class="muted">Aspiring Python Backend Developer</div>
+        <div class="quick">
+          <div><b>LOCATION</b>Dindigul, Tamil Nadu, India</div>
+          <div><b>EDUCATION</b>B.Tech – Information Technology</div>
+          <div><b>GRADUATION</b>Expected 2027</div>
+          <div><b>CGPA</b>8.5</div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="wrap" id="about">
+      <div class="section-head"><div class="eyebrow">Introduction</div><h2>About Me</h2><p>Backend development, databases and practical problem-solving.</p></div>
+      <div class="card">
+        <p>I'm an Information Technology student at NPR College of Engineering and Technology, Tamil Nadu. I’m seeking a Python Backend Developer opportunity where I can apply my knowledge of Python, Django, Flask, MySQL, Git and GitHub.</p>
+        <p>My interests include backend development, REST-style CRUD systems, database management and machine-learning-integrated modules. I aim to contribute to dependable applications while continuously learning and following industry best practices.</p>
+      </div>
+    </section>
+
+    <section class="wrap" id="skills">
+      <div class="section-head"><div class="eyebrow">What I work with</div><h2>Technical Skills</h2><p>Tools and technologies listed in my resume.</p></div>
+      <div class="skills">
+        <div class="skill"><b>Programming</b><span>Python</span></div>
+        <div class="skill"><b>Backend Frameworks</b><span>Django · Flask</span></div>
+        <div class="skill"><b>Frontend</b><span>HTML5 · CSS3 · JavaScript · Bootstrap</span></div>
+        <div class="skill"><b>Database</b><span>MySQL</span></div>
+        <div class="skill"><b>Version Control</b><span>Git · GitHub</span></div>
+        <div class="skill"><b>Data & Machine Learning</b><span>Pandas · NumPy · Scikit-learn</span></div>
+      </div>
+    </section>
+
+    <section class="wrap" id="experience">
+      <div class="section-head"><div class="eyebrow">Experience</div><h2>Internship</h2></div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Full Stack Development with AI Intern</h3>
+          <div class="muted">Pydun Technology Private Limited</div>
+          <ul>
+            <li>Worked on full stack application development using Python and Django concepts.</li>
+            <li>Contributed to applications following AI-assisted development workflows.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap" id="projects">
+      <div class="section-head"><div class="eyebrow">Selected work</div><h2>Projects</h2><p>Projects and responsibilities described in my resume.</p></div>
+      <div class="grid">
+        <article class="card">
+          <h3>Employee Management Portal with Resignation Risk Analyser</h3>
+          <p>Developed a Django-based application to manage employee records, with MySQL as the database backend.</p>
+          <p>Built a machine-learning-based resignation risk analyser using Python ML libraries to flag at-risk employees for HR follow-up, and presented the project design and outcomes.</p>
+          <div class="taglist"><span class="tag">Python</span><span class="tag">Django</span><span class="tag">MySQL</span><span class="tag">Machine Learning</span></div>
+        </article>
+        <article class="card">
+          <h3>Hospital Chatbot</h3>
+          <p>Built a Flask-based conversational chatbot backend to handle hospital-related patient queries, with request handling and response logic structured in Python.</p>
+          <p>Designed a simple, user-friendly front end using HTML5 and CSS3.</p>
+          <div class="taglist"><span class="tag">Python</span><span class="tag">Flask</span><span class="tag">HTML5</span><span class="tag">CSS3</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap" id="education">
+      <div class="section-head"><div class="eyebrow">Academic background</div><h2>Education & Certifications</h2></div>
+      <div class="grid">
+        <div class="card edu">
+          <div><h3>B.Tech – Information Technology</h3><p>NPR College of Engineering and Technology, Tamil Nadu</p><p class="muted">Expected 2027</p></div>
+          <div class="score">8.5 CGPA</div>
+        </div>
+        <div class="card">
+          <h3>Certifications</h3>
+          <p>• NPTEL Cloud Computing – Elite, 83%</p>
+          <p>• MongoDB Certification</p>
+          <p>• Cyber Security – Value-Added Course</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap" id="contact">
+      <div class="contact">
+        <div><div class="eyebrow">Let's connect</div><h2>Have an opportunity?</h2><p>Feel free to reach out for professional opportunities and collaboration.</p></div>
+        <div class="contact-links">
+          <a href="mailto:karthigaikumar05@gmail.com">✉ karthigaikumar05@gmail.com</a>
+          <a href="tel:+919344885879">☎ +91 9344885879</a>
+          <a href="https://linkedin.com/in/karthigaikumarr" target="_blank" rel="noopener">↗ LinkedIn</a>
+          <a href="https://github.com/karthigaikumarr" target="_blank" rel="noopener">↗ GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap footer-inner"><span>© <span id="year"></span> Karthigaikumar R</span><span>Designed for a clean, responsive experience.</span></div></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
